@@ -71,6 +71,7 @@ namespace LinqExercise
             {
                 Console.WriteLine(num);
             }
+            //numbers = changeAge.ToArray();
             // List of employees ****Do not remove this****
             var employees = CreateEmployees();
 
