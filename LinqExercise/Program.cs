@@ -66,8 +66,9 @@ namespace LinqExercise
             }
             //TODO: Change the value at index 4 to your age, then print the numbers in descending order
             var changeAge = numbers.Select((num, index) => index == 4 ? 23 : num);
-            Console.WriteLine("Display an updated array of numbers:");
-            foreach (var num in changeAge)
+            var changeAgeAndDescend = changeAge.OrderByDescending(x => x);
+            Console.WriteLine("Display an updated array of numbers with index 4 changed to 23 and in desceding order:");
+            foreach (var num in changeAgeAndDescend)
             {
                 Console.WriteLine(num);
             }
